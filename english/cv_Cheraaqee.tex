@@ -1,144 +1,114 @@
-\documentclass{letter}
-\usepackage{geometry}
-\geometry{a4paper, top=1.5cm, left=1.5cm, bottom=1.5cm, right=1.5cm}
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
 \usepackage{hyperref}
-\usepackage{nopageno}
-\usepackage{graphicx}
-\usepackage{wrapfig}
-\usepackage{setspace}
-\usepackage{color}
-% \usepackage{calligra}
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{multicol}
-% \usepackage{xepersian}
-% \settextfont{XB Niloofar}
-% \defpersianfont\nastaliq[Scale=1.7]{IranNastaliq}
+\usepackage[default]{lato}
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{008080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
 \begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\name{Pooryaa Cheraaqee}
+\tagline{Computer Vision Researcher}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{profile\_pic\_c}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{p.cheraaghi@gmail.com}
+  \phone{+98-9394250675}
+  \location{Rasht , Iran}
+ % \homepage{https://yogs447.blogspot.com/}
+  \linebreak
+  % \twitter{@Majeed\_here}
+  \linkedin{\href{https://www.linkedin.com/in/pooryaa-cheraaqee-8b66b2b6/}{https://www.linkedin.com/in/pooryaa-cheraaqee-8b66b2b6/}}
+  \github{\href{github.com/cheraaqee}{github.com/cheraaqee}} % I'm just making this up though.
+  \homepage{\href{https://scholar.google.com/citations?user=ebSTTkAAAAAJ\&hl=en\&oi=ao}{https://scholar.google.com/citations?user=ebSTTkAAAAAJ\&hl=en\&oi=ao}}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
 
-\textbf{{\huge Pooryaa Cheraaqee}} \hfill \llap e-mail:\texttt{p.cheraaghi@gmail.com}
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
 
-\textbf{{Computer Vision Researcher}} \hfill \llap phone: +98-9394250675
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
 
-\hfill \llap on the web:\href{https://scholar.google.com/citations?user=ebSTTkAAAAAJ&hl=en&oi=ao}{Google Scholar}, \href{https://github.com/cheraaqee}{Git-Hub}
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Education}
+\cvevent{MSc Computer Science} {\href{https://khu.ac.ir/en/}{Kharazmi University}}{2016-2019}{Tehran, Iran} 
+\textsc{Thesis}: \href{https://raw.githubusercontent.com/cheraaqee/dissertation/main/diss_Cheraaqee.pdf}{A No-Reference Method for Assessing the Quality of Multiply Distorted Images}
+% \textsc{CGPA}: 3.25/4.0
+% \\
+% \cvevent{BSc Computer Science}{
+% Guilan University}{2010 - 2015}{Guilan, Iran}
+% \textsc{CGPA}: 3.072/4.0
+%\\
 
-\hfill \llap Born on March 30th, 1992
+\cvsection[page2sidebar]{Experiences}
+\cvevent{HPC admin}{\href{http://ipm.ac.ir/}{Institute of Research in Fundamental Sciences}}{Fall 2021- Present}{}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-%%%%%%%%%%%%%%%%%%%%%%EDUCATION%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\noindent \rule{18cm}{3pt}
-\begin{multicols}{2}
+\cvevent{Translator}{\href{https://instagram.com/nashrafa}{Nashrafa On-Line Publishing Co.}}{Summer 2019- Spring 2020}{}
 
-\begin{Large}
-	\textbf{Education}
-\end{Large}
-
-\textbf{MSc Computer Science}
-
-Artificial Intelligence and Robotics
-
-\href{https://khu.ac.ir/en}{Kharazmi University}, 2016-2019
-
-Thesis:
-
-A No-Reference Method for Assessing the Quality of Multiply Distorted Images
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%% PUBLICATIONS %%%%%%%%%%%%%%%%%%%%5
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\noindent \rule{\columnwidth}{2pt}
-
-\begin{Large}
-	\textbf{Publications}
-\end{Large}
-	\begin{itemize}
-
-		\item Cheraaqee, Pooryaa, Zahra Maviz, Azadeh Mansouri, and Ahmad Mahmoudi-Aznaveh. \textbf{``Quality Assessment of Screen Content Images in Wavelet Domain."} IEEE Transactions on Circuits and Systems for Video Technology (2021).
-
-		\item Heydari, Maryam, Pooryaa Cheraaqee, Azadeh Mansouri, and Ahmad Mahmoudi-Aznaveh. \textbf{``A low complexity wavelet-based blind image quality evaluator."} Signal Processing: Image Communication 74 (2019): 280-288.
-
-		\item Cheraaqee, Pooryaa, Azadeh Mansouri, and Ahmad Mahmoudi-Aznaveh. \textbf{``Incorporating Gradient Direction for Assessing Multiple Distortions."} In 2019 4th International Conference on Pattern Recognition and Image Analysis (IPRIA), pp. 109-113. IEEE, 2019.
-
-		\item Motamednia, Hossein, Pooryaa Cheraaqee, and Azadeh Mansouri. \textbf{``Exploring the Gradient for Video Quality Assessment."} In 2020 International Conference on Machine Vision and Image Processing (MVIP), pp. 1-7. IEEE, 2020.
-
-		\item Motamednia, Hossein, Mohammad Minouei, Pooryaa Cheraaqee, and Mohammad Reza Soheili. \textbf{``High-Resolution Document Image Reconstruction from Video."} In 2020 International Conference on Machine Vision and Image Processing (MVIP), pp. 1-7. IEEE, 2020.
-
-		\item Arezoomand, Amirhoessein, Pooryaa Cheraaqee, Azadeh Mansouri. \textbf{Perceptually Optimized Loss Function for Image Super-Resolution} Submitted to 2021 7th International Conference on Signal Processing and Intelligent Systems, IEEE \href{https://github.com/cheraaqee/popSR/}{https://github.com/cheraaqee/popSR/}
-	\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%% SKILLs  %%%%%%%%%%%%%%%%%%%%5
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\noindent \rule{\columnwidth}{2pt}
-
-\begin{Large}
-	\textbf{Skills}
-\end{Large}
-	\begin{itemize}
-		\item \textbf{Presenting and Explaining Concepts}
-
-			Professional \LaTeX~user
-
-		\item \textbf{Programming}
-
-Python, MATLAB (regular user), C/C++ (beginner)
-
-\item{\textbf{Operating System}}
-
-Regular Linux user
-
-\item \textbf{English}
-
-IELTS 7.5
-\item \textbf{Neural Networks and Machine Learning}
-
-Keras, SciKit-Learn,  and LibSVM
-
-\item \textbf{Image Processing}
-
-MATLAB IP toolbox and OpenCV-Python
-
-\item \textbf{Teamwork}
-
-Regular Git user
-
-\item \textbf{Math}
-
-Capable of modeling real-world problems with mathematical concepts
-	\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%% EXPERIENCES  %%%%%%%%%%%%%%%%%%%%5
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\noindent \rule{\columnwidth}{2pt}
-
-\begin{Large}
-	\textbf{Experiences}
-\end{Large}
-\begin{itemize}
-\item \textbf{HPC admin}
-
-\href{https://hpc.ipm.ac.ir/}{Institute of Research in Fundamental Sciences}, Fall 2021- Present
-
-\item \textbf{Translator}
-
- \href{https://instagram.com/nashrafa}{Nashrafa} On-Line Publishing Co., Summer 2019- Spring 2020
-
-\item \textbf{Instructor}
+\cvevent{Instructor}{}{}{}
 	\begin{itemize}
 		\item O.S. Lab, \href{https://guilan.ac.ir/en/home}{University of Guilan}, Fall 2019
 
@@ -148,7 +118,7 @@ Capable of modeling real-world problems with mathematical concepts
 
 		\item T.A. for Neural Networks Course- \href{https://scholar.google.com/citations?user=eK03yPgAAAAJ}{Prof. Mansouri}- Current
 	\end{itemize}
-\item \textbf{Projects}
+\cvevent{Projects}{}{}{}
 	\begin{itemize}
 		\item Quality Assessment of Screen Content Images- Iran National Science Foundation
 
@@ -156,21 +126,25 @@ Capable of modeling real-world problems with mathematical concepts
 
 		\item Customized Object Detection with Deep Learning, As a free-lancer
 	\end{itemize}
-\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%% INTERESTS  %%%%%%%%%%%%%%%%%%%%5
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% % \noindent \rule{18cm}{3pt}
-% \begin{Large}
-% 	\textcolor{blue}{\textbf{Interests}}
-% \end{Large}
-% 
-% 	\textcolor{blue}{Discrete Mathematics, Computer Simulation, Data Visualization, Human Visual System, Data Compression, Graphics, Calligraphy, Taekwondo, Physics, Language, Literature, Annimation, and Movies.}
-% \vskip 1cm
-% 	\hskip 0.5cm \includegraphics[trim={9cm 28cm 8cm 5cm}, clip, height=5cm]{../profile_pic.jpg}
-% 	% \hskip 0.5cm \includegraphics[trim={6cm 11cm 6cm 7cm}, clip, height=5cm]{../profile_pic.jpg}
-\end{multicols}
+ 
+\cvsection{Publications }
+\begin{itemize}
+		\item Cheraaqee, Pooryaa, Zahra Maviz, Azadeh Mansouri, and Ahmad Mahmoudi-Aznaveh. \textbf{``Quality Assessment of Screen Content Images in Wavelet Domain."} IEEE Transactions on Circuits and Systems for Video Technology (2021).
+
+		\item Heydari, Maryam, Pooryaa Cheraaqee, Azadeh Mansouri, and Ahmad Mahmoudi-Aznaveh. \textbf{``A low complexity wavelet-based blind image quality evaluator."} Signal Processing: Image Communication 74 (2019): 280-288.
+
+		\item Cheraaqee, Pooryaa, Azadeh Mansouri, and Ahmad Mahmoudi-Aznaveh. \textbf{``Incorporating Gradient Direction for Assessing Multiple Distortions."} In 2019 4th International Conference on Pattern Recognition and Image Analysis (IPRIA), pp. 109-113. IEEE, 2019.
+
+		\item Motamednia, Hossein, Pooryaa Cheraaqee, and Azadeh Mansouri. \textbf{``Exploring the Gradient for Video Quality Assessment."} In 2020 International Conference on Machine Vision and Image Processing (MVIP), pp. 1-7. IEEE, 2020.
+
+		\item Motamednia, Hossein, Mohammad Minouei, Pooryaa Cheraaqee, and Mohammad Reza Soheili. \textbf{``High-Resolution Document Image Reconstruction from Video."} In 2020 International Conference on Machine Vision and Image Processing (MVIP), pp. 1-7. IEEE, 2020.
+  
+		\item Arezoomand, Amirhoessein, Pooryaa Cheraaqee, Azadeh Mansouri. \textbf{Perceptually Optimized Loss Function for Image Super-Resolution} Submitted to 2021 7th International Conference on Signal Processing and Intelligent Systems, IEEE \href{https://github.com/cheraaqee/popSR/}{https://github.com/cheraaqee/popSR/}
+  \end{itemize}
+
+
+
+\clearpage
+
+
 \end{document}
