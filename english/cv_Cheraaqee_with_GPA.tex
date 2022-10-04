@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+\usepackage{hyperref}
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{008080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Pooryaa Cheraaqee}
+\tagline{Computer Vision Researcher}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{profile\_pic\_c}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{p.cheraaghi@gmail.com}
+  \phone{+98-9394250675}
+  \location{Rasht , Iran}
+ % \homepage{https://yogs447.blogspot.com/}
+  \linebreak
+  % \twitter{@Majeed\_here}
+  \linkedin{\href{https://www.linkedin.com/in/pooryaa-cheraaqee-8b66b2b6/}{https://www.linkedin.com/in/pooryaa-cheraaqee-8b66b2b6/}}
+  \github{\href{github.com/cheraaqee}{github.com/cheraaqee}} % I'm just making this up though.
+  \homepage{\href{https://scholar.google.com/citations?user=ebSTTkAAAAAJ\&hl=en\&oi=ao}{https://scholar.google.com/citations?user=ebSTTkAAAAAJ\&hl=en\&oi=ao}}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Education}
+\cvevent{MSc Computer Science} {\href{https://khu.ac.ir/en/}{Kharazmi University}}{2016-2019}{Tehran, Iran}{GPA: 16 (out of 20)}
+
+\textsc{Thesis}: \href{https://raw.githubusercontent.com/cheraaqee/dissertation/main/diss_Cheraaqee.pdf}{A No-Reference Method for Assessing the Quality of Multiply Distorted Images}
+% \textsc{CGPA}: 3.25/4.0
+% \\
+% \cvevent{BSc Computer Science}{
+% Guilan University}{2010 - 2015}{Guilan, Iran}
+% \textsc{CGPA}: 3.072/4.0
+%\\
+\newline
+\newline
+\cvevent{BSc Computer Science} {\href{https://guilan.ac.ir/en/}{University of Guilan}}{2010-2015}{Rasht, Iran}{GPA: 15 (out of 20)}
+
+\textsc{Thesis}: {Study and Implementation of Image Segmentation Methods}
+
+
+\cvsection[page2sidebar]{Experiences}
+\cvevent{HPC admin}{\href{http://ipm.ac.ir/}{Institute of Research in Fundamental Sciences}}{Fall 2021- Present}{}
+
+\cvevent{Translator}{\href{https://instagram.com/nashrafa}{Nashrafa On-Line Publishing Co.}}{Summer 2019- Spring 2020}{}
+
+\cvevent{Instructor}{}{}{}
+	\begin{itemize}
+		\item O.S. Lab, \href{https://guilan.ac.ir/en/home}{University of Guilan}, Fall 2019
+
+		\item T.A. for Computer Architecture Course- \href{https://scholar.google.com/citations?user=WT1Jve8AAAAJ&hl=en}{Prof. Ahmadifar}
+
+		\item T.A. for Algorithm Design Course- \href{https://www.linkedin.com/in/shahram-moadab-94b79253/?originalSubdomain=ir}{Prof. Moadab}
+
+		\item T.A. for Neural Networks Course- \href{https://scholar.google.com/citations?user=eK03yPgAAAAJ}{Prof. Mansouri}- Current
+	\end{itemize}
+\cvevent{Projects}{}{}{}
+	\begin{itemize}
+		\item Quality Assessment of Screen Content Images- Iran National Science Foundation
+
+		\item Face Recognition with Deep Learning, As a free-lancer
+
+		\item Customized Object Detection with Deep Learning, As a free-lancer
+	\end{itemize}
+ 
+\cvsection{Publications }
+\begin{itemize}
+		\item Cheraaqee, Pooryaa, Zahra Maviz, Azadeh Mansouri, and Ahmad Mahmoudi-Aznaveh. \textbf{``Quality Assessment of Screen Content Images in Wavelet Domain."} IEEE Transactions on Circuits and Systems for Video Technology (2021).
+
+		\item Heydari, Maryam, Pooryaa Cheraaqee, Azadeh Mansouri, and Ahmad Mahmoudi-Aznaveh. \textbf{``A low complexity wavelet-based blind image quality evaluator."} Signal Processing: Image Communication 74 (2019): 280-288.
+
+		\item Cheraaqee, Pooryaa, Azadeh Mansouri, and Ahmad Mahmoudi-Aznaveh. \textbf{``Incorporating Gradient Direction for Assessing Multiple Distortions."} In 2019 4th International Conference on Pattern Recognition and Image Analysis (IPRIA), pp. 109-113. IEEE, 2019.
+
+		\item Motamednia, Hossein, Pooryaa Cheraaqee, and Azadeh Mansouri. \textbf{``Exploring the Gradient for Video Quality Assessment."} In 2020 International Conference on Machine Vision and Image Processing (MVIP), pp. 1-7. IEEE, 2020.
+
+		% \item Motamednia, Hossein, Mohammad Minouei, Pooryaa Cheraaqee, and Mohammad Reza Soheili. \textbf{``High-Resolution Document Image Reconstruction from Video."} In 2020 International Conference on Machine Vision and Image Processing (MVIP), pp. 1-7. IEEE, 2020.
+  
+		% \item Arezoomand, Amirhoessein, Pooryaa Cheraaqee, Azadeh Mansouri. \textbf{Perceptually Optimized Loss Function for Image Super-Resolution} Submitted to 2021 7th International Conference on Signal Processing and Intelligent Systems, IEEE \href{https://github.com/cheraaqee/popSR/}{https://github.com/cheraaqee/popSR/}
+  \end{itemize}
+
+\clearpage
+
+
+\end{document}
