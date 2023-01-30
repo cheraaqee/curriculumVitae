@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.9)  1 SEP 2022 20:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.9)  30 JAN 2023 01:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1486,13 +1486,9 @@ Package pdftex.def Info: profile_pic_c.jpg  used on input line 86.
 
 (./page1sidebar.tex
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 1.
+(Font)              scaled to size 17.28pt on input line 6.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 1.
-LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 2.
-LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 2.
+(Font)              scaled to size 17.28pt on input line 6.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 7.
 LaTeX Font Info:    Trying to load font information for TS1+lato-TLF on input l
@@ -1554,11 +1550,11 @@ Package logreq Info: Writing requests to 'cv_Cheraaqee.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32794 strings out of 478293
- 652346 string characters out of 5844974
- 1381284 words of memory out of 5000000
- 50485 multiletter control sequences out of 15000+600000
- 807884 words of font info for 70 fonts, out of 8000000 for 9000
+ 32790 strings out of 478293
+ 652266 string characters out of 5844974
+ 1379283 words of memory out of 5000000
+ 50483 multiletter control sequences out of 15000+600000
+ 762576 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,8n,118p,1157b,848s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc}{/usr/l
@@ -1567,12 +1563,11 @@ ive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/local/
 texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}</usr/lo
 cal/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></us
 r/local/texlive/2022/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/typoland/lato/Lato-Italic.pfb></usr/lo
-cal/texlive/2022/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb>
-Output written on cv_Cheraaqee.pdf (1 page, 470748 bytes).
+ocal/texlive/2022/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb>
+Output written on cv_Cheraaqee.pdf (1 page, 451681 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
